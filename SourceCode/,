@@ -1,0 +1,35 @@
+<?php
+//inisialisasi array yang bernama $siswa
+// key "nama", "nim", "nilai" dan ada value
+//3 baris 3 kolom
+$siswa = array(
+ array(
+ 'nama' => 'Ryan',
+ 'nim' => 202310009,
+ 'nilai' => 85
+ ),
+ array(
+ 'nama' => 'Jane',
+ 'nim' => 202310010,
+ 'nilai' => 75
+ ),
+ array(
+ 'nama' => 'Mike',
+ 'nim' => 202310088,
+ 'nilai' => 90
+ )
+);
+foreach ($siswa as $data) {
+ echo "Nama: " . $data['nama'] . "<br>";
+ echo "Usia: " . $data['nim'] . " tahun<br>";
+ echo "Nilai: " . $data['nilai'] . "<br>";
+ if ($data['nilai'] >= 80) {
+ echo "Kategori: Baik<br>";
+ } elseif ($data['nilai'] >= 60) {
+ echo "Kategori: Cukup<br>";
+ } else {
+ echo "Kategori: Kurang<br>";
+ }
+ echo "<br>";
+}
+?>
